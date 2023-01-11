@@ -13,7 +13,7 @@ type Game struct {
 
 func (g *Game) Update() error {
 	second := uint8(time.Now().Second())
-	g.backgroundColor = color.RGBA{3 * second, 0, 0, 0xff}
+	g.backgroundColor = color.RGBA{0, second, 0, 0xff}
 	return nil
 }
 
